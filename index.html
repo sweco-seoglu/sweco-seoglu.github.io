@@ -39,6 +39,16 @@
             });
         }
     </script>
+        <script>
+            window.addEventListener('load', onVrViewLoad);
+    
+            function onVrViewLoad() {
+                // Selector '#vrview' finds element with id 'vrview'.
+                var vrView3 = new VRView.Player('#vrview4', {
+                    image: 'hej4.jpg'
+                });
+            }
+        </script>
 </head>
 
 <body>
