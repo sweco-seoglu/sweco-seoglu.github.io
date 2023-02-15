@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="scripts.js"></script>
+        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+        <script>
+            window.addEventListener('load', onVrViewLoad);
+
+                function onVrViewLoad() {
+                // Selector '#vrview' finds element with id 'vrview'.
+                var vrView = new VRView.Player('#vrview', {
+                    image: 'hej.jpg'
+                });
+                }
+        </script>
     </head>
 
     <body>
@@ -19,6 +30,7 @@
             data-cursor="hand"
             data-indicator="5">
         </div>
+        <div id='vrview'></div>
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
     </body>
