@@ -1,37 +1,61 @@
 <!doctype html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Demo 360 Viewer</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="scripts.js"></script>
-        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-        <script>
-            window.addEventListener('load', onVrViewLoad);
 
-                function onVrViewLoad() {
-                // Selector '#vrview' finds element with id 'vrview'.
-                var vrView = new VRView.Player('#vrview', {
-                    image: 'hej.jpg'
-                });
-                }
-        </script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Demo 360 Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="scripts.js"></script> -->
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script>
+        window.addEventListener('load', onVrViewLoad);
 
-    <body>
-        <h1>Demo 360 Viewer</h1>
-        <div>
+        function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView = new VRView.Player('#vrview', {
+                image: 'hej.jpg'
+            });
+        }
+    </script>
+    <script>
+        window.addEventListener('load', onVrViewLoad);
+
+        function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView2 = new VRView.Player('#vrview2', {
+                image: 'hej2.jpg'
+            });
+        }
+    </script>
+    <script>
+        window.addEventListener('load', onVrViewLoad);
+
+        function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView3 = new VRView.Player('#vrview3', {
+                image: 'hej3.jpg'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Demo 360 Viewer</h1>
+    <!-- <div>
             <img src="Råsjö_360_Montage.png" width="2000" height="1000"
             class="reel"
             data-image="Råsjö_360_Montage.png"
             data-stitched="15000"
             data-cursor="hand"
             data-indicator="5">
-        </div>
-        <div id='vrview'></div>
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
-    </body>
+        </div> -->
+    <div id='vrview'></div>
+    <div id='vrview2'></div>
+    <div id='vrview3'></div>
+    <!-- Load external JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
 </html>
